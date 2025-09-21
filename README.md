@@ -31,7 +31,6 @@ cd gvm-report-builder
 
 ### 2. Install dependencies
 
-Copy code
 pip install -r requirements.txt
 
 ### 3. Run the tool
