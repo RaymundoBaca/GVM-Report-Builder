@@ -35,7 +35,7 @@ Copy code
 pip install -r requirements.txt
 
 ### 3. Run the tool
-python supereje2.py
+python Vuln.py
 
 ---
 
