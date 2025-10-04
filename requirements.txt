@@ -1,0 +1,7 @@
+camelot-py
+PyMuPDF
+pytesseract
+python-docx
+natsort
+pyfiglet
+pySide6
