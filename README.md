@@ -15,7 +15,7 @@
 - [Usage](#-usage)
 - [Report Generation Levels](#-report-generation-levels)
 - [Output Files](#-output-files)
-- [Building Executable](#-building-executable)
+- [Building Executable](#️-building-executable)
 - [Project Structure](#-project-structure)
 - [Technical Details](#-technical-details)
 - [Troubleshooting](#-troubleshooting)
