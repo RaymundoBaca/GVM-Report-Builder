@@ -480,7 +480,7 @@ If you encounter issues or have questions:
 ---
 
 <p align="center">
-  <img src="favicon.png" width="200">
+  <img src="favicon.ico" width="200">
   <br>
   <em>Built with ❤️ for security professionals</em>
 </p>
