@@ -4,7 +4,7 @@
 
 **Transform raw GVM/OpenVAS vulnerability scan reports into professional, client-ready documents with automated image processing, OCR text extraction, and intelligent report generation.**
 
-![Banner](Banner.png)
+<img width="2900" height="737" alt="Banner" src="https://github.com/user-attachments/assets/2104c94c-c565-43c1-aafa-2f91b82a7c6f" />
 
 ---
 
