@@ -47,7 +47,7 @@ class MainApp(QtWidgets.QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Vulnerability Analysis")
+        self.setWindowTitle("GVM Report Builder")
         self.setFixedSize(900, 720)
         self.cancelled = False
 
