@@ -4,7 +4,7 @@
 
 **Transform raw GVM/OpenVAS vulnerability scan reports into professional, client-ready documents with automated image processing, OCR text extraction, and intelligent report generation.**
 
-![Banner](Banner.png)
+<img width="2900" height="737" alt="Banner" src="https://github.com/user-attachments/assets/2104c94c-c565-43c1-aafa-2f91b82a7c6f" />
 
 ---
 
@@ -13,6 +13,7 @@
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
 - [Usage](#-usage)
+- [Screenshots](#-screenshots)
 - [Report Generation Levels](#-report-generation-levels)
 - [Output Files](#-output-files)
 - [Building Executable](#️-building-executable)
@@ -103,14 +104,14 @@ pip install -r requirements.txt
 
 3. **Run the application**
 ```bash
-python Vuln.py
+python GVM_Report_Builder.py
 ```
 
 ### Option 2: Standalone Executable
 
 1. **Download** the latest release from [Releases](https://github.com/RaymundoBaca/GVM-Report-Builder/releases)
 2. **Extract** the ZIP file
-3. **Run** `Vuln.exe` (Windows) - No installation required!
+3. **Run** `GVM Report Builder.exe` (Windows) - No installation required!
 
 ---
 
@@ -120,9 +121,9 @@ python Vuln.py
 
 1. **Launch the Application**
    ```bash
-   python Vuln.py
+   python GVM_Report_Builder.py
    ```
-   Or double-click `Vuln.exe` if using the compiled version (coming soon in my webpage).
+   Or double-click `GVM Report Builder.exe` if using the compiled version.
 
 2. **Select Detail Level**
    - **1 - Precise**: Detailed vulnerability descriptions with context
@@ -167,6 +168,32 @@ The application processes reports through **9 sequential stages**:
 | 8 | `rAI3.py` | Generate Excel table | 77-88% |
 | 9 | `rAI4.py` | Generate Word report | 88-99% |
 | 10 | `rAI5.py` | Generate text summary | 99-100% |
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+### Main Interface
+
+<img width="541" height="451" alt="image1" src="https://github.com/user-attachments/assets/86687d25-3ca6-42d1-b9e4-3e8569860cb6"/>
+
+*Modern dark-themed GUI with intuitive file selection and real-time progress tracking*
+
+### Processing in Action
+
+<img width="541" height="451" alt="image2" src="https://github.com/user-attachments/assets/2531a505-8ec6-4c6e-912b-8fd8cd37d3fb"/>
+
+*Live console output with color-coded messages (Success: Green, Warning: Orange, Error: Red)*
+
+### Generated Reports Preview
+
+<img width="1144" height="512" alt="image3" src="https://github.com/user-attachments/assets/ee514781-8a61-4e5d-a56a-7d3467105427"/>
+
+*Professional Word, Excel, and Text output files ready for client delivery*
+
+</div>
 
 ---
 
@@ -235,20 +262,20 @@ Results/
 **For Windows:**
 
 ```bash
-pyinstaller --onefile --noconsole --icon=favicon.ico --add-data "Hackalotl.png;." --add-data "favicon.ico;." --add-data "sc;sc" --add-data "tesseract;tesseract" Vuln.py
+pyinstaller --onefile --noconsole --icon=favicon.ico --add-data "Hackalotl.png;." --add-data "favicon.ico;." --add-data "sc;sc" --add-data "tesseract;tesseract" GVM_Report_Builder.py
 ```
 
 **For Linux/macOS:**
 
 ```bash
-pyinstaller --onefile --noconsole --icon=favicon.ico --add-data "Hackalotl.png:." --add-data "favicon.ico:." --add-data "sc:sc" --add-data "tesseract:tesseract" Vuln.py
+pyinstaller --onefile --noconsole --icon=favicon.ico --add-data "Hackalotl.png:." --add-data "favicon.ico:." --add-data "sc:sc" --add-data "tesseract:tesseract" GVM_Report_Builder.py
 ```
 
 **Important Notes:**
 - Use `;` as separator on Windows, `:` on Linux/macOS
 - `--add-data "sc;sc"` includes all processing scripts
 - `--add-data "tesseract;tesseract"` bundles OCR engine
-- The executable will be in `dist/Vuln.exe`
+- The executable will be in `dist/GVM Report Builder.exe`
 - First build may take several minutes to bundle all dependencies
 
 ---
@@ -257,11 +284,10 @@ pyinstaller --onefile --noconsole --icon=favicon.ico --add-data "Hackalotl.png:.
 
 ```
 GVM-Report-Builder/
-├── 📄 Vuln.py                    # Main GUI application
+├── 📄 GVM_Report_Builder.py      # Main GUI application
 ├── 📄 requirements.txt           # Python dependencies
 ├── 📄 README.md                  # This file
 ├── 🖼️ Hackalotl.png              # Main application mascot
-├── 🖼️ Banner.png                 # Banner file for github
 ├── 🎨 favicon.ico                # Application icon (Windows)
 │
 ├── 📁 sc/                       # Processing scripts package
@@ -418,7 +444,7 @@ pip install -r requirements.txt
 pip install black flake8 pytest  # Optional: code formatting and testing
 
 # Run the application
-python Vuln.py
+python GVM_Report_Builder.py
 ```
 
 ### Code Style
@@ -480,7 +506,7 @@ If you encounter issues or have questions:
 ---
 
 <p align="center">
-  <img src="favicon.png" width="200">
+  <img src="favicon.ico" width="200">
   <br>
   <em>Built with ❤️ for security professionals</em>
 </p>
