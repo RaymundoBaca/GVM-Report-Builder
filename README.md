@@ -483,8 +483,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔮 Future Enhancements
 
-- [ ] Support for additional vulnerability scanners (Nessus, Qualys)
-- [ ] Customizable report templates
 - [ ] Vulnerability trend analysis and charts
 - [ ] Multi-language support
 
